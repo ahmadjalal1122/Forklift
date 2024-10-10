@@ -1,0 +1,175 @@
+/* Basic styling for the form container */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Style for all text input fields */
+  .text-input {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the file input to make it consistent with other inputs */
+  .file-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #ccc;
+    background-color: #fafafa;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Changing appearance on hovering over the file input */
+  .file-input:hover {
+    border-color: #aaa;
+  }
+  
+  /* Style for the submit button */
+  .submit-button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the submit button */
+  .submit-button:hover {
+    background-color: #ffc727;
+  }
+  
+/* Slider content */
+  .vehicle-slider .vehicle-container {
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    
+  }
+  
+  .vehicle-slider .image-container {
+    margin: 10px;
+    text-align: center;
+    max-height: 300px; /* Shorten the height of the image container */
+    overflow: hidden;
+  }
+  
+  .vehicle-slider .vehicle-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Ensures that the image height doesn't exceed container */
+  }
+  
+  .vehicle-details {
+    margin-top: 20px;
+    /* background-color: #dee0e2; */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex; /* Flex to align details in a single line */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .vehicle-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make details horizontal */
+  }
+  
+  .vehicle-details li {
+    margin: 0 10px;
+  }
+  
+  .vehicle-details li label {
+    font-weight: bold; /* Make labels bold */
+  }
+  
+  /* Customizing slick dots (bullets for the slider) */
+  .slick-dots li button:before {
+    font-size: 12px; /* Larger bullets */
+    color: #000; /* Change color if needed */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #000 !important; /* Change color for active bullet */
+  }
+  
+  .loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Light overlay background */
+  }
+  
+  .loading-text {
+    font-size: 20px;
+    color: black; /* Black color text */
+    margin-left: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .fa-spinner {
+    font-size: 24px;
+    animation: spin 1s linear infinite;
+  }
+  
+
+  .vehicle-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .detail-item p {
+    display: flex;
+    align-items: center;
+    margin-right: 8px; /* Adjust spacing between icon and text */
+  }
+  
+  .detail-item svg {
+    margin-right: 5px; /* Space between the icon and the label */
+  }
+  
+@media only screen and (max-width: 1000px)
+{
+
+  .vehicle-details ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+  }
+  .vehicle-details{
+    /* background-color: #292a2b; */
+  }
+
+
+
+}
